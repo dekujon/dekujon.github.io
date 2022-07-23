@@ -1,0 +1,31 @@
+/* .jumbotron {
+    background-color: #e0f7ff;
+} */
+
+/* .btn-info {
+    background-color: #02628d;
+} */
+
+hr.solid {
+    border-top: 5px solid #18d4ec;
+    width: 11%;
+
+}
+
+hr.solid2 {
+    border-top: 1px solid #d1d3d4;
+
+}
+
+hr.solid3 {
+    border-top: 5px solid #80d4c4;
+    width: 11%;
+
+}
+
+hr.solid4 {
+    border-top: 5px solid #80d4c4;
+    width: 25%;
+
+}
+
