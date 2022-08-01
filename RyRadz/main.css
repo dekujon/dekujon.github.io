@@ -1,0 +1,164 @@
+body {
+  font-family: 'Familjen Grotesk', sans-serif;
+
+}
+
+.bgcolor.scrolled{
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+.zoom:hover {
+    transform: scale(1.2); 
+  }
+
+
+
+.FText {
+  font-size: 24px;
+}
+
+.FText2 {
+  font-size: 28px;
+  color: #8def69;
+  font-weight: 700;
+}
+
+.FText3 {
+  font-size: 28px;
+  color: #e94025;
+  font-weight: 700;
+}
+
+.FText4 {
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbrand {
+  font-size: 1.2rem; 
+  font-weight: 600; 
+  color: white; 
+  letter-spacing: 6px; 
+  line-height: 10px; 
+  text-align: right;
+  padding-top: 10px;
+}
+
+.pen {
+  font-weight: 100;
+  font-size: 0.4rem;
+}
+
+
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbrand {
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    color: white; 
+    letter-spacing: 6px; 
+    line-height: 20px; 
+    text-align: right;
+    padding-top: 20px;
+  }
+
+  .pen {
+    font-weight: 100;
+    font-size: 0.6rem;
+  }
+
+  .contpad {
+    padding-top: 40px;
+  }
+  
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbrand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    padding-top: 20px;
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    color: white; 
+    letter-spacing: 8px; 
+    line-height: 25px; 
+    padding-top: 50px;
+    text-align: center;
+  }
+  .pen {
+    font-weight: 100;
+    font-size: 0.7rem;
+  }
+  
+  .navpad {
+    padding-bottom: 30px;
+  }
+
+  .contsize {
+    font-size: 0.95rem;
+  }
+  
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbrand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  padding-top: 20px;
+  font-size: 2.1rem; 
+  font-weight: 600; 
+  color: white; 
+  letter-spacing: 10px; 
+  line-height: 30px; 
+  padding-top: 50px;
+  text-align: center;
+}
+  .pen {
+    font-weight: 100;
+    font-size: 1rem;
+  }
+
+  .navpad {
+    padding-bottom: 30px;
+  }
+}
+
+.widget {
+  max-width: 40px;
+}
+
+
+
+.invert {
+  filter: invert(100%);
+
+}
+
+.cnp {
+  padding:0;
+}
+
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+ 
