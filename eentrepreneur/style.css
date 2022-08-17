@@ -1,0 +1,45 @@
+body {
+    background-color: #fff0e5;
+}
+
+
+.goals {
+    height: 100px;
+    width: 400px;
+}
+
+.goals:hover {
+    background-color: white;
+    cursor:pointer;
+}
+
+
+#goal1, #goal2, #goal3 {
+    border-bottom: 1px solid black;
+}
+
+.courses {
+    height: 180px;
+    width: 300px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    padding: 5px;
+
+}
+
+.goal {
+    height: 100px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+
+.goalsText {
+    position: relative;
+    right: 0%;
+    transition: right ease 0.5s;
+}
+
+.goalsText:hover {
+    right: -10px;
+}
