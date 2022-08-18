@@ -59,6 +59,7 @@ body {
 }
 
 .courses:hover {
+    cursor:pointer;
     box-shadow: -10px 10px black; 
     transform: translate(10px, -10px);
 }
