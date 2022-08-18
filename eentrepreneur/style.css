@@ -6,45 +6,88 @@ body {
 .goals {
     height: 100px;
     width: 400px;
+    transition: 0.25s ease;
 }
 
 .goals:hover {
     background-color: white;
     cursor:pointer;
+    height: 110px;
+    
+}
+
+.goalsText {
+    position: relative;
+    right: 0%;
+    transition: right ease 0.2s;
+}
+
+.title1, .title2, .title3, .title4 {
+    position: relative;
+    right: 0%;
+    transition: right ease 0.2s;
+}
+
+.goals:hover .goalsText {
+    right: -6px;
+}
+.goals:hover .title1, .goals:hover .title2, .goals:hover .title3, .goals:hover .title4 {
+    right: -6px;
 }
 
 
-#goal1, #goal2, #goal3 {
+#goal1 {
     border-bottom: 1px solid black;
+}
+
+#goal2, #goal3 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#goal4 {
+    border-top: 1px solid black;
 }
 
 .courses {
     height: 180px;
     width: 300px;
     border: 1px solid black;
-    margin-bottom: 30px;
-    padding: 5px;
+    transition: 0.25s ease;
+    background-color: white;
+    
+}
 
+.courses:hover {
+    box-shadow: -10px 10px black; 
+    transform: translate(10px, -10px);
 }
 
 .goal {
     height: 100px;
     width: 400px;
-    margin-bottom: 10px;
 }
 
-
-.goalsText {
-    position: relative;
-    right: 0%;
-    transition: right ease 0.5s;
+.grid {
+    background: radial-gradient(rgba(0, 0, 0, 0.448) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
-.goalsText:hover {
-    right: -10px;
+/* .col-7, .container, .col-5, .row, .col {
+    border: 1px solid black;
+} */
+
+.iBox {
+    height: 100px;
+    width: 265px;
+    background: white;
 }
 
-.backshad:hover {
-    transition: box-shadow .3s;
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
+.uBox {
+    background-color: #deccea;
+    }
+
+
+
+
+
