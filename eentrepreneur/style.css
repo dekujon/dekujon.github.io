@@ -5,7 +5,6 @@ body {
 
 .goals {
     height: 100px;
-    width: 400px;
     transition: 0.25s ease;
 }
 
@@ -51,11 +50,10 @@ body {
 
 .courses {
     height: 180px;
-    width: 300px;
     border: 1px solid black;
     transition: 0.25s ease;
     background-color: white;
-    
+   
 }
 
 .courses:hover {
@@ -74,19 +72,79 @@ body {
     background-size: 20px 20px;
 }
 
-/* .col-7, .container, .col-5, .row, .col {
+/* .col-7, .container, .col-5, .row, .col{
     border: 1px solid black;
 } */
 
 .iBox {
     height: 100px;
-    width: 265px;
+    width: 280px;
     background: white;
+    margin-top: 40px;
 }
 
 .uBox {
     background-color: #deccea;
     }
+
+.cBox {
+    height: 155px;
+    /* border: 1px solid; */
+}
+
+h5 {
+    line-height: 22px
+}
+
+li {
+    font-size: 14px;
+}
+
+.bot {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .courses {
+        width: 240px;
+    }
+    /* .goals {
+        width: 300px;
+    }  */
+    .iBox {
+        width: 200px;
+    }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .courses {
+        width: 265px;
+    }
+    /* .goals {
+        width: 350px;
+    } */
+    .iBox {
+        width: 220px;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .courses {
+        width: 300px;
+    }
+    /* .goals {
+        width: 400px;
+    } */
+    .iBox {
+        width: 265px;
+    }
+}
 
 
 
