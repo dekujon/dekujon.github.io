@@ -4,36 +4,40 @@ body {
 
 
 .goals {
-    height: 100px;
-    transition: 0.25s ease;
+    position: relative;
+    height: 92px;
+    transition: 0.3s ease;
 }
 
 .goals:hover {
-    background-color: white;
     cursor:pointer;
-    height: 110px;
-    
 }
+
+.goalsx {
+    position: relative;
+    height: 155px;
+    transition: 0.3s ease;
+
+}
+
+.goalsx:hover {
+    cursor:pointer;
+}
+
 
 .goalsText {
     position: relative;
     right: 0%;
-    transition: right ease 0.2s;
+    transition: right ease 0.3s;
 }
+
+
 
 .title1, .title2, .title3, .title4 {
     position: relative;
     right: 0%;
-    transition: right ease 0.2s;
+    transition: right ease 0.3s;
 }
-
-.goals:hover .goalsText {
-    right: -6px;
-}
-.goals:hover .title1, .goals:hover .title2, .goals:hover .title3, .goals:hover .title4 {
-    right: -6px;
-}
-
 
 #goal1 {
     border-bottom: 1px solid black;
@@ -72,10 +76,6 @@ body {
     background-size: 20px 20px;
 }
 
-/* .col-7, .container, .col-5, .row, .col{
-    border: 1px solid black;
-} */
-
 .iBox {
     height: 100px;
     width: 280px;
@@ -89,7 +89,6 @@ body {
 
 .cBox {
     height: 155px;
-    /* border: 1px solid; */
 }
 
 h5 {
@@ -105,17 +104,50 @@ li {
     line-height: 25px;
 }
 
+@media (max-width: 575.98px) {
+
+
+}
+
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .courses {
         width: 240px;
     }
-    /* .goals {
-        width: 300px;
-    }  */
+
     .iBox {
         width: 200px;
+    }
+
+    .goals:hover {
+        background-color: white;
+        cursor:pointer;
+        height: 102px !important;
+    }
+
+    .goalsx:hover {
+        background-color: white;
+        cursor:pointer;
+        height: 164px !important;
+    }
+
+    .goals:hover .goalsText {
+        right: -6px;
+    }
+    .goals:hover .title1, .goals:hover .title2, .goals:hover .title3, .goals:hover .title4 {
+        right: -6px;
+    }
+    
+    .goalsx:hover .goalsText {
+        right: -6px;
+    }
+    .goalsx:hover .title1, .goalsx:hover .title2, .goalsx:hover .title3, .goalsx:hover .title4 {
+        right: -6px;
+    }
+
+    .courseTop {
+        margin-top: 20px;
     }
 
 }
@@ -125,9 +157,7 @@ li {
     .courses {
         width: 265px;
     }
-    /* .goals {
-        width: 350px;
-    } */
+
     .iBox {
         width: 220px;
     }
@@ -138,9 +168,7 @@ li {
     .courses {
         width: 300px;
     }
-    /* .goals {
-        width: 400px;
-    } */
+
     .iBox {
         width: 265px;
     }
