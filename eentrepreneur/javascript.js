@@ -75,7 +75,7 @@ $(document).ready(function() {
             
             $("#goal2").on("click", function(){
                 $(this).insertAfter("#goal1");
-                $("#goal3, #goal4").insertAfter(".#goal2");
+                $("#goal3, #goal4").insertAfter("#goal2");
                 })
         
             $("#goal3").on("click", function(){
@@ -93,7 +93,58 @@ $(document).ready(function() {
 
     });
 
+    if (window.matchMedia('(max-width: 992px)').matches) {
+        $("#goal2, #goal3, #goal4").insertAfter(".after");
 
+        $("#goal1").on("click", function(){
+            $("#goal2, #goal3, #goal4").insertAfter(".after");
+        })  
+
+        $("#goal2").on("click", function(){
+            $(this).insertAfter("#goal1");
+            $("#goal3, #goal4").insertAfter(".after");
+        })
+
+        $("#goal3").on("click", function(){
+            $("#goal2").insertAfter("#goal1");
+            $(this).insertAfter("#goal2");
+            $("#goal4").insertAfter(".after");
+        })    
+
+        $("#goal4").on("click", function(){
+            $("#goal2").insertAfter("#goal1");
+            $("#goal3").insertAfter("#goal2");
+            $(this).insertAfter("#goal3");
+        }) 
     
-})
+    }
+
+    if (window.matchMedia('(min-width: 993px)').matches) {
+         $("#goal2, #goal3, #goal4").insertAfter("#goal1");
+            
+        $("#goal1").on("click", function(){
+            $("#goal2, #goal3, #goal4").insertAfter("#goal1");
+        })  
+            
+        $("#goal2").on("click", function(){
+            $(this).insertAfter("#goal1");
+            $("#goal3, #goal4").insertAfter("#goal2");
+        })
+        
+        $("#goal3").on("click", function(){
+            $("#goal2").insertAfter("#goal1");
+            $(this).insertAfter("#goal2");
+            $("#goal4").insertAfter("#goal3");
+        })    
+        
+        $("#goal4").on("click", function(){
+            $("#goal2").insertAfter("#goal1");
+            $("#goal3").insertAfter("#goal2");
+            $(this).insertAfter("#goal3");
+        }) 
+    }
+      
+});
+
+
 
