@@ -36,7 +36,45 @@ $(document).ready(function() {
         $("#goal1, #goal2, #goal3").removeClass("goalsx").removeClass("uno").removeClass("dos").removeClass("tres").addClass("goals");
         })    
 
+        $(window).resize(function() {
+            var width = $(window).width();
+            if (width < 575.98) {
+                if ($("#goal1").hasClass("uno")) {
+                    $(".afterx").insertAfter("#goal1");
+                  }
+                else if ($("#goal2").hasClass("dos")) {
+                    $(".afterx").insertAfter("#goal2");
+                  }
+                else if ($("#goal3").hasClass("tres")) {
+                    $(".afterx").insertAfter("#goal3");
+                  }
+                else if ($("#goal4").hasClass("quatro")) {
+                    $(".afterx").insertAfter("#goal4");
+                  }
+                $("#goal1").on("click", function(){
+                    $("#goal2, #goal3, #goal4").insertAfter(".after");
+                    })  
+                
+                $("#goal2").on("click", function(){
+                    $(this).insertAfter("#goal1");
+                    $("#goal3, #goal4").insertAfter(".after");
+                    })
+            
+                $("#goal3").on("click", function(){
+                    $("#goal2").insertAfter("#goal1");
+                    $(this).insertAfter("#goal2");
+                    $("#goal4").insertAfter(".after");
+                    })    
+            
+                $("#goal4").on("click", function(){
+                    $("#goal2").insertAfter("#goal1");
+                    $("#goal3").insertAfter("#goal2");
+                    $(this).insertAfter("#goal3");
+                    }) 
+            } 
     
+            });
+
     $(window).resize(function() {
         var width = $(window).width();
         if (width < 991.98) {
@@ -104,6 +142,32 @@ $(document).ready(function() {
         } 
 
     });
+
+    if (window.matchMedia('(max-width: 575.98px)').matches) {
+        $(".afterx").insertAfter("#goal1");
+
+        $("#goal1").on("click", function(){
+            $("#goal2, #goal3, #goal4").insertAfter(".after");
+        })  
+
+        $("#goal2").on("click", function(){
+            $(this).insertAfter("#goal1");
+            $("#goal3, #goal4").insertAfter(".afterx");
+        })
+
+        $("#goal3").on("click", function(){
+            $("#goal2").insertAfter("#goal1");
+            $(this).insertAfter("#goal2");
+            $("#goal4").insertAfter(".afterx");
+        })    
+
+        $("#goal4").on("click", function(){
+            $("#goal2").insertAfter("#goal1");
+            $("#goal3").insertAfter("#goal2");
+            $(this).insertAfter("#goal3");
+        }) 
+    
+    }
 
     if (window.matchMedia('(max-width: 991.98px)').matches) {
         $("#goal2, #goal3, #goal4").insertAfter(".after");

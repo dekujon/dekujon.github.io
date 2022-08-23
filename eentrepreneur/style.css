@@ -60,6 +60,15 @@ body {
    
 }
 
+.coursesx {
+    height: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    background-color: white;
+   
+}
+
 .courses:hover {
     cursor:pointer;
     box-shadow: -10px 10px black; 
@@ -103,12 +112,6 @@ li {
     font-size: 14px;
     line-height: 25px;
 }
-
-@media (max-width: 575.98px) {
-
-
-}
-
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
