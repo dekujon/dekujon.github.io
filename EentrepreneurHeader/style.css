@@ -1,0 +1,25 @@
+html,body {
+    font-family: 'Raleway', sans-serif;
+    padding: 3em 2em;
+    font-size: 18px;
+    color: black;
+    
+  }
+  
+  h1,h2 {
+    font-weight: 400;
+    margin: 0.4em 0;
+  }
+  h1 { font-size: 3.5em; font-weight: 700;}
+  h2 {
+    color: black;
+    font-size: 1em;
+  }
+
+
+
+  span {
+    color: blue;
+
+  }
+
