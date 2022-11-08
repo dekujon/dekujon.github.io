@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    max-width: 1500px;
+    background-color: white;
+    margin: 0 auto;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-top: 5px;
+}
+
+.logo {
+
+    padding-top: 3px;
+    float: left;
+    margin-left: 20px;
+}
+
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #1c4ba4;
+    padding: 5px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.source-menu {
+    float: left;
+}
+
+.source-menu2 {
+    float: left;
+}
+
+nav ul .sourcedd a {
+    display: block;
+}
+
+
+nav ul .others a:hover {
+    border-bottom: 4px solid #1c4ba4;
+}
+
+.bookings {
+    line-height: 60px;
+    float: right;
+    margin-right: 40px;
+}
+
+nav .bookings a {
+    padding: 15px;
+    color: #1c4ba4;
+    font-weight: 700;
+}
+
+nav .bookings a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+nav .bookings button {
+    padding: 12px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: #1c4ba4;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.checkbtn {
+    color: black;
+    font-size: 30px;
+    line-height: 60px;
+    float: right;
+    padding-right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+
+#sourcedd {
+    display: none;
+}
+
+.sourcedd:hover {
+    border-bottom: 4px solid #1c4ba4;
+    cursor: pointer;
+}
+
+.sourcedd-label {
+    padding: 5px;
+    padding-bottom: 15px;
+    color: #1c4ba4;
+    font-weight: 600;
+}
+
+.sourcedd-label:hover {
+    cursor: pointer;
+}
+
+.sourcedd-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 75%;
+    background-color: white;
+    z-index: 1;
+}
+
+#sourcedd:checked ~ .sourcedd-content {
+    display: block;
+}
+
+
+
+.source-header {
+    line-height: 25px;
+    color: black;
+}
+
+.source-para {
+    line-height: 20px;
+    font-size: 16px;
+    color: grey;
+}
+
+.sign {
+    /* display: inline-block; */
+    margin-top: 5px;
+    margin-right: 10px;
+    line-height: 0px;
+    vertical-align: top;
+    float: left;
+    color: black;
+}
+.mini-box {
+    float: left;
+}
+
+.source-menu-box:hover .sign {
+    color: #1c4ba4;
+
+}
+
+.source-menu-box:hover {
+    background-color: #cfd5e9;
+}
+
+.source-menu-box:hover .source-para {
+    color: black;
+
+}
+
+.source-menu-box {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    
+}
+
+.menubox {
+    margin-top: 1%;
+    margin-left: 16%;
+}
+
+
+/* html,body {
+    padding: 3em 2em;
+    font-size: 18px;
+    color: black;
+    
+  } */
+  
+  h1,h2 {
+    font-family: 'Raleway', sans-serif;
+
+    margin: 0.4em 0;
+    font-size: 18px;
+    color: black;
+  }
+  h1 { font-size: 5em; font-weight: 900;}
+  h2 {
+    color: black;
+    font-size: 1em;
+  }
+
+
+
+  span {
+    color:#1c4ba4;
+
+  }
+.hero {
+    padding-top: 150px;
+}
+
+.header {
+    margin: auto;
+    width: 67%;
+}
+
+.herohead {
+    float: left;
+    width: 50%;
+
+}
+
+.herosub {
+    font-size: 3em;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.heropic {
+    float: left;
+    width: 50%;
+}
+
+.heroheader {
+    margin: auto;
+    width: 67%;
+}
+
+.heroimage {
+    width: 100%;
+    height: auto;
+}
+
+.herobtn {
+    margin-top: 60px;
+    background-color: #1c4ba4;
+    padding: 25px 60px;
+    color: white;
+    border: none;
+    border-radius: 45px;
+    font-size: 2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.third {
+    margin-top: 500px;
+    height: 1000px;
+    background-color: #1c4ba4;
+}
+
+@media (max-width: 1199.98px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .bookings {
+        display: none;
+    }
+    
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+
+
+    .logo {
+
+        margin-left: 10px;
+    }
+}
+
