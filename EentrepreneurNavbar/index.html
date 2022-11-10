@@ -4,84 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EE Header</title>
+    <title>EE Navbar</title>
     <script src="https://kit.fontawesome.com/e6271eaba7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <nav class="navborder">
+    <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
-        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" height="60px"></a></div>
-        <ul>
-            <li class="others"><a href="#">My Home</a></li> 
-            <li class="sourcedd">
-                <input type="checkbox" id="sourcedd">
-                <label for="sourcedd" class="sourcedd-label">Knowledge <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                <div class="sourcedd-content">
-                    <div class="menubox">
-                        <div class="source-menu">
-                            <a href="#">
-                                <div class="source-menu-box">
-                                    <div class="sign"><i class="fa-solid fa-bars"></i></div>
-                                    <div class="mini-box">
-                                        <h4 class="source-header">The Source</h4>
-                                        <p class="source-para">The go-to source for outsourcing<br> information, news and guides.</p>
-                                    </div>
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="" height="60px"></a>
+        <ul class="main-menu">
+            <li class="others"><a href="index.html">My Home</a></li> 
+            <li>
+                <input type="checkbox" id="knowledge">
+                <label for="knowledge">Knowledge <i id="caret" class="fa-sharp fa-solid fa-caret-down"></i></label>
+                <div class="knowledge-content">
+                    <div class="dropdown-box">
+                        <div class="dropdown-menu">
+                                <div class="dropdown-menu-box">
+                                    <a href="#"><i class="fa-solid fa-circle"></i> Business fundamentals</a>
                                 </div>
-                            </a>
-                            <a href="#"><div class="source-menu-box">
-                                <div class="sign"><i class="fa-solid fa-bars"></i></div>
-                                <div class="mini-box">
-                                    <h4 class="source-header">The Source</h4>
-                                    <p class="source-para">The go-to source for outsourcing<br> information, news and guides.</p>
+                                <div class="dropdown-menu-box">
+                                    <a href="#"><i class="fa-solid fa-circle"></i> Digital Marketing</a>
                                 </div>
-                            </div></a>
-                            <a href="#"><div class="source-menu-box">
-                                <div class="sign"><i class="fa-solid fa-bars"></i></div>
-                                <div class="mini-box">
-                                    <h4 class="source-header">The Source</h4>
-                                    <p class="source-para">The go-to source for outsourcing<br> information, news and guides.</p>
+                                <div class="dropdown-menu-box">
+                                    <a href="#"><i class="fa-solid fa-circle"></i> Accounting & Finance</a>
                                 </div>
-                            </div></a>
-                            <a href="#"><div class="source-menu-box">
-                                <div class="sign"><i class="fa-solid fa-bars"></i></div>
-                                <div class="mini-box">
-                                    <h4 class="source-header">The Source</h4>
-                                    <p class="source-para">The go-to source for outsourcing<br> information, news and guides.</p>
+                                <div class="dropdown-menu-box">
+                                    <a href="#"><i class="fa-solid fa-circle"></i> Management</a>
                                 </div>
-                            </div></a>
                         </div>
-                        <div class="source-menu2">
-                            <a href="#"><div class="source-menu-box">
-                                <div class="sign"><i class="fa-solid fa-bars"></i></div>
-                                <div class="mini-box">
-                                    <h4 class="source-header">The Source</h4>
-                                    <p class="source-para">The go-to source for outsourcing<br> information, news and guides.</p>
-                                </div>
-                            </div></a>
-                            <a href="#"><div class="source-menu-box">
-                                <div class="sign"><i class="fa-solid fa-bars"></i></div>
-                                <div class="mini-box">
-                                    <h4 class="source-header">The Source</h4>
-                                    <p class="source-para">The go-to source for outsourcing<br> information, news and guides.</p>
-                                </div>
-                            </div></a>
-                            <a href="#"><div class="source-menu-box">
-                                <div class="sign"><i class="fa-solid fa-bars"></i></div>
-                                <div class="mini-box">
-                                    <h4 class="source-header">The Source</h4>
-                                    <p class="source-para">The go-to source for outsourcing<br> information, news and guides.</p>
-                                </div>
-                            </div></a>
-                            <a href="#"><div class="source-menu-box">
-                                <div class="sign"><i class="fa-solid fa-bars"></i></div>
-                                <div class="mini-box">
-                                    <h4 class="source-header">The Source</h4>
-                                    <p class="source-para">The go-to source for outsourcing<br> information, news and guides.</p>
-                                </div>
-                            </div></a>
+                        <div class="dropdown-menu2">
+                            <div class="dropdown-menu-box">
+                                <a href="#" class="dropdown-para"><i class="fa-solid fa-circle"></i> Entrepreneurship</a>
+                            </div>
+                            <div class="dropdown-menu-box">
+                                <a href="#" class="dropdown-para"><i class="fa-solid fa-circle"></i> Programming & Coding</a>
+                            </div>
+                            <div class="dropdown-menu-box">
+                                <a href="#" class="dropdown-para"><i class="fa-solid fa-circle"></i> Website Development</a>
+                            </div>
+                            <div class="dropdown-menu-box">
+                                <a href="#" class="dropdown-para"><i class="fa-solid fa-circle"></i> Graphics Design</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu3">
+                            <div class="dropdown-menu-boxx">
+                                <h1 class="dropdown-header">Get started today</h1>
+                            </div>
+                            <div class="dropdown-menu-box" id="box-hover1" style="background-color: #c4e5c3;">
+                                <a href="#" class="dropdown-para"><i class="fa-solid fa-circle"></i><div class="get-started">Start learning <br> <span>Description</span>
+                                </div></a>
+                            </div>
+                            <div class="dropdown-menu-box" id="box-hover2" style="background-color: #f1dbc4;">
+                                <a href="#" class="dropdown-para"><i class="fa-solid fa-circle"></i><div class="get-started">Book free call <br> <span>Description</span>
+                                </div></a>
+                            </div>
+                            <div class="dropdown-menu-box" id="box-hover3" style="background-color: #f1a0ad;">
+                                <a href="#" class="dropdown-para"><i class="fa-solid fa-circle"></i><div class="get-started">"Something else"<br> <span>&nbsp;&nbsp;Description</span>
+                                </div></a>
+                            </div>
                         </div>
                     </div>
                     
@@ -100,7 +83,7 @@
 
     <section class="hero">
         <div class="header">
-            <h1>Become a better <br>
+            <h1 class="hero-header">Become a better <br>
                 <span
                    class="txt-rotate"
                    data-period="2000"

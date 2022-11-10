@@ -6,87 +6,239 @@
     box-sizing: border-box;
 }
 
-
-
-nav {
-    max-width: 1500px;
-    background-color: white;
-    margin: 0 auto;
-    padding-left: 75px;
-    padding-right: 75px;
-    margin-top: 5px;
+::selection {
+    color: none;
+    background: none;
 }
 
-.logo {
+/* Navbar */
+nav {
+    width: 100%;
+    background-color: #1c4ba4;
+    position: fixed;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
-    padding-top: 3px;
+/* Navbar Logo */
+.logo {
     float: left;
     margin-left: 20px;
 }
 
-
-nav ul {
+/* Navbar Main Menu */
+.main-menu {
     float: left;
+    margin-left: 20px;
 }
 
-nav ul li {
+nav .main-menu li {
     display: inline-block;
-    line-height: 60px;
-    margin-left: 15px;
-    font-size: 20px;
+    margin-left: 12px;
 }
 
-nav ul li a {
-    color: #1c4ba4;
+nav .main-menu li a {
+    color: white;
     padding: 5px;
     padding-bottom: 15px;
     font-weight: 600;
+    line-height: 60px;
+    font-size: 1.4em;
 }
 
-.source-menu {
-    float: left;
+nav .main-menu li label {
+    color: white;
+    padding: 5px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    line-height: 60px;
+    font-size: 1.4em;
 }
 
-.source-menu2 {
-    float: left;
+nav ul .others a:hover {
+    border-bottom: 4px solid white;
 }
 
-nav ul .sourcedd a {
+nav ul li label:hover {
+    border-bottom: 4px solid white;
+    cursor: pointer;
+}
+
+/* Navbar Dropdown */
+#knowledge {
+    display: none;
+}
+
+.knowledge-content {
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color:#eaecff;
+    z-index: 1;
+}
+
+#knowledge:checked ~ .knowledge-content {
     display: block;
 }
 
-
-nav ul .others a:hover {
-    border-bottom: 4px solid #1c4ba4;
+.dropdown-box {
+    display: flex;
+    justify-content: center;
 }
+
+.dropdown-menu {
+    float: left;
+    margin-top: 2.5%;
+}
+
+.dropdown-menu2 {
+    float: left;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-right: 2%;
+}
+
+.dropdown-menu3 {
+    float: left;
+    margin-top: 1%;
+    margin-bottom: 1%;  
+    padding-left: 1.5%;
+    border-left: 1px solid black;
+}
+
+
+
+.dropdown-menu .dropdown-menu-box a {
+    color: black;
+    font-size: 1.6em;
+ 
+}
+
+.dropdown-menu2 .dropdown-menu-box a {
+    color: black;
+    font-size: 1.6em;
+}
+
+.dropdown-menu .dropdown-menu-box i {
+    color:#1c4ba4;
+    font-size: 1.6em;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.dropdown-menu2 .dropdown-menu-box i {
+    color:#1c4ba4;
+    font-size: 1.6em;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.dropdown-menu3 .dropdown-menu-boxx {
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 60px;
+    margin: 20px 10px;
+}
+
+.dropdown-menu3 .dropdown-menu-box {
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+/* .dropdown-menu3 .dropdown-menu-box:hover {
+    box-shadow: 0 0 0 1px black;
+} */
+
+#box-hover1:hover {
+    box-shadow: 0 0 0 1px #09ff00;
+}
+
+#box-hover2:hover {
+    box-shadow: 0 0 0 1px #ff8400;;
+}
+
+#box-hover3:hover {
+    box-shadow: 0 0 0 1px #ff002b;;
+}
+
+.dropdown-menu3 .dropdown-menu-box a {
+    color: black;
+    font-size: 1.6em;
+    
+}
+
+.dropdown-menu3 .dropdown-menu-box i {
+    color:#1c4ba4;
+    font-size: 1.6em;
+    vertical-align: middle;
+}
+
+.dropdown-menu-box {
+    margin: 20px 10px;
+}
+
+.dropdown-menu .dropdown-menu-box a:hover {
+    color: #1c4ba4;
+}
+
+.dropdown-menu2 .dropdown-menu-box a:hover {
+    color: #1c4ba4;
+}
+
+.dropdown-header {
+    font-size: 2.3em;
+}
+
+.get-started {
+    display: inline-block; 
+    vertical-align: middle;
+    line-height: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.get-started span{
+    color: #575957;
+    font-size: 0.9em;
+}
+
+/* Navbar Log In */
 
 .bookings {
     line-height: 60px;
     float: right;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 nav .bookings a {
     padding: 15px;
-    color: #1c4ba4;
+    color: white;
     font-weight: 700;
+    font-size: 1.4em;
+    margin: 15px;
 }
 
 nav .bookings a:hover {
-    color: black;
     text-decoration: underline;
 }
 
 nav .bookings button {
-    padding: 12px;
-    border-radius: 6px;
+    padding: 10px 25px;
     border-style: none;
-    background-color: #1c4ba4;
+    background-color:#7ed957;
     color: white;
     cursor: pointer;
     font-weight: 800;
+    text-shadow: 1px 1px black;
+    font-size: 1.3em;
+    
 }
 
+/* Hamburger Menu */
 .checkbtn {
     color: black;
     font-size: 30px;
@@ -102,118 +254,17 @@ nav .bookings button {
 }
 
 
-#sourcedd {
-    display: none;
-}
 
-.sourcedd:hover {
-    border-bottom: 4px solid #1c4ba4;
-    cursor: pointer;
-}
-
-.sourcedd-label {
-    padding: 5px;
-    padding-bottom: 15px;
-    color: #1c4ba4;
-    font-weight: 600;
-}
-
-.sourcedd-label:hover {
-    cursor: pointer;
-}
-
-.sourcedd-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    height: 75%;
-    background-color: white;
-    z-index: 1;
-}
-
-#sourcedd:checked ~ .sourcedd-content {
-    display: block;
-}
-
-
-
-.source-header {
-    line-height: 25px;
-    color: black;
-}
-
-.source-para {
-    line-height: 20px;
-    font-size: 16px;
-    color: grey;
-}
-
-.sign {
-    /* display: inline-block; */
-    margin-top: 5px;
-    margin-right: 10px;
-    line-height: 0px;
-    vertical-align: top;
-    float: left;
-    color: black;
-}
-.mini-box {
-    float: left;
-}
-
-.source-menu-box:hover .sign {
-    color: #1c4ba4;
-
-}
-
-.source-menu-box:hover {
-    background-color: #cfd5e9;
-}
-
-.source-menu-box:hover .source-para {
-    color: black;
-
-}
-
-.source-menu-box {
-    width: 300px;
-    height: 100px;
-    padding: 10px;
-    
-}
-
-.menubox {
-    margin-top: 1%;
-    margin-left: 16%;
-}
-
-
-/* html,body {
-    padding: 3em 2em;
-    font-size: 18px;
-    color: black;
-    
-  } */
-  
-  h1,h2 {
+  .hero-header {
     font-family: 'Raleway', sans-serif;
-
     margin: 0.4em 0;
     font-size: 18px;
     color: black;
+    font-size: 5em;
+    font-weight: 900;
   }
-  h1 { font-size: 5em; font-weight: 900;}
-  h2 {
-    color: black;
-    font-size: 1em;
-  }
-
-
-
   span {
     color:#1c4ba4;
-
   }
 .hero {
     padding-top: 150px;
