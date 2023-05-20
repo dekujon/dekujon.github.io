@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EE Accordion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/e6271eaba7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="pt-4">
+            <h2 class="goal">What's your goal?</h2>
+        </div>
+        <div class="row">
+            <!-- Goal Categories -->
+            <div class="col-lg-5 mt-lg-4">
+                <!-- 1st Goal -->
+                <div class="goals p-2 d-flex align-items-center uno" id="goal1">
+                    <div class="title1" style="flex-basis: 100%;">
+                        <h4 class="m-0">
+                            <span>Find a business idea</span>
+                            <span id="caret-right-1-1" class="caret-right d-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-1-1" class="caret-down d-lg-none" style="float: right;"></style><i class="fa-solid fa-angle-down"></span></i></h4>
+                    </div>
+                    <div class="goals-text" id="des1" style="display: none; flex-basis: 100%;">
+                        <h4>
+                            <span>Find a business idea</span>
+                            <span id="caret-right-1-2" class="caret-right d-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-1-2" class="caret-down d-lg-none" style="float: right;"><i class="fa-solid fa-angle-down"></i></span>
+                        </h4>
+                        <p class="fs-6 lead pe-1 m-0 d-none d-lg-block">For aspiring entrepreneurs hungry for success.
+                        </p>
+                    </div>
+                </div>
+                <!-- 2nd Goal -->
+                <div class="goals p-2 d-flex align-items-center" id="goal2">
+                    <div class="title2" style="flex-basis: 100%;">
+                        <h4 class="m-0">
+                            <span>Start a business</span>
+                            <span id="caret-right-2-1" class="caret-right d-lg-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-2-1" class="caret-down d-none" style="float: right;"></style><i class="fa-solid fa-angle-down"></span></i></h4>
+                    </div>
+                    <div class="goals-text" id="des2" style="display: none; flex-basis: 100%;">
+                        <h4>
+                            <span>Start a business</span>
+                            <span id="caret-right-2-2" class="caret-right d-lg-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-2-2" class="caret-down d-none" style="float: right;"><i class="fa-solid fa-angle-down"></i></span>
+                        </h4>
+                        <p class="fs-6 lead pe-1 m-0 d-none d-lg-block">For entrepreneurs with a great idea and the motivation to get started.
+                        </p>
+                    </div>
+                </div>
+                <!-- 3rd Goal -->
+                <div class="goals p-2 d-flex align-items-center" id="goal3">
+                    <div class="title3" style="flex-basis: 100%;">
+                        <h4 class="m-0">
+                            <span>Grow a business</span>
+                            <span id="caret-right-3-1" class="caret-right d-lg-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-3-1" class="caret-down d-none" style="float: right;"></style><i class="fa-solid fa-angle-down"></span></i></h4>
+                    </div>
+                    <div class="goals-text" id="des3" style="display: none; flex-basis: 100%;">
+                        <h4>
+                            <span>Grow a business</span>
+                            <span id="caret-right-3-2" class="caret-right d-lg-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-3-2" class="caret-down d-none" style="float: right;"><i class="fa-solid fa-angle-down"></i></span>
+                        </h4>
+                        <p class="fs-6 lead pe-1 m-0 d-none d-lg-block">For entrepreneurs with a business, they want to take to the next level.
+                        </p>
+                    </div>
+                </div>
+                <!-- 4th Goal -->
+                <div class="goals p-2 d-flex align-items-center" id="goal4">
+                    <div class="title4" style="flex-basis: 100%;">
+                        <h4 class="m-0">
+                            <span>Maximise a business</span>
+                            <span id="caret-right-4-1" class="caret-right d-lg-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-4-1" class="caret-down d-none" style="float: right;"></style><i class="fa-solid fa-angle-down"></span></i></h4>
+                    </div>
+                    <div class="goals-text" id="des4" style="display: none; flex-basis: 100%;">
+                        <h4>
+                            <span>Maximise a business</span>
+                            <span id="caret-right-4-2" class="caret-right d-lg-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-4-2" class="caret-down d-none" style="float: right;"><i class="fa-solid fa-angle-down"></i></span>
+                        </h4>
+                        <p class="fs-6 lead pe-1 m-0 d-none d-lg-block">For entrepreneurs with an awesome business that's ready to go global!
+                        </p>
+                    </div>
+                </div>
+                <!-- 5th Goal -->
+                <div class="goals p-2 d-flex align-items-center" id="goal5">
+                    <div class="title5" style="flex-basis: 100%;">
+                        <h4 class="m-0">
+                            <span>Learn by category</span>
+                            <span id="caret-right-5-1" class="caret-right d-lg-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-5-1" class="caret-down d-none" style="float: right;"></style><i class="fa-solid fa-angle-down"></span></i></h4>
+                    </div>
+                    <div class="goals-text" id="des5" style="display: none; flex-basis: 100%;">
+                        <h4>
+                            <span>Maximise a business</span>
+                            <span id="caret-right-5-2" class="caret-right d-lg-none" style="float: right;"><i class="fa-solid fa-angle-right"></i></span>
+                            <span id="caret-down-5-2" class="caret-down d-none" style="float: right;"><i class="fa-solid fa-angle-down"></i></span>
+                        </h4>
+                        <p class="fs-6 lead pe-1 m-0 d-none d-lg-block">Optimise all departments of your business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Courses -->
+            <div class="col-lg-7 grid after d-none d-sm-block pb-lg-4">
+                <div class="row mt-4 mb-lg-2">
+                    <!-- Courses 1st Box -->
+                    <div class="col-12 col-md-6 course-top">
+                        <!-- 1st Box 1 -->
+                        <div class="courses first mx-auto mb-4 me-lg-1">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="free">FREE</span></p>
+                                <h5 class="mb-1 lh-1">Entrepreneurs Handbook Part 1:</h5>
+                                <p class="mb-3">Before You Start Your Business</p>
+                                <p class="topics">• Beginner friendly, 17 topics</p>
+                            </div>
+                            <div class="bot-free"></div>
+                        </div>
+                        <!-- 1st Box 2 -->
+                        <div class="courses second mx-auto mb-4 me-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="free">FREE</span></p>
+                                <h5 class="mb-1 lh-1">Entrepreneur Handbook Part 2:</h5>
+                                <p class="mb-3">Let’s Build Your Business</p>
+                                <p class="topics">• Beginner friendly, 26 topics</p>
+                            </div>
+                            <div class="bot-free"></div>
+                        </div>
+                        <!-- 1st Box 3 -->
+                        <div class="courses third mx-auto mb-4 me-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="free">FREE</span></p>
+                                <h5 class="mb-1 lh-1">Entrepreneurs Handbook Part 3:</h5>
+                                <p class="mb-3">Let’s Grow Your Business</p>
+                                <p class="topics">• Beginner friendly, 15 topics</p>
+                            </div>
+                            <div class="bot-free"></div>
+                        </div>
+                        <!-- 1st Box 4 -->
+                        <div class="courses fourth mx-auto mb-4 me-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="free">FREE</span></p>
+                                <h5 class="mb-1 lh-1">Entrepreneurs Handbook Part 4:</h5>
+                                <p class="mb-3">Managing Your Business Growth</p>
+                                <p class="topics">• Beginner friendly, 21 topics</p>
+                            </div>
+                            <div class="bot-free"></div>
+                        </div>
+                        <!-- 1st Box 5 -->
+                        <div class="courses fifth mx-auto mb-4 me-lg-1 p-4"
+                            style="display: none; background-color: #124c9b;">
+                            <h4 class="mb-3 text-white">Digital Marketing</h4>
+                            <p class="text-white">• 25 courses</p>
+                        </div>
+                    </div>
+                    <!-- Courses 2nd Box -->
+                    <div class="col-12 col-md-6 course-top">
+                        <!-- 2nd Box 1 -->
+                        <div class="courses first mx-auto mb-4 ms-lg-1">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">Facebook Advertising Bootcamp</h5>
+                                <p class="mb-3">From Beginner To Expert</p>
+                                <p class="topics">• Beginner friendly, 48 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 2nd Box 2 -->
+                        <div class="courses second mx-auto mb-4 ms-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">Facebook Adverting Success</h5>
+                                <p class="mb-3">Long Term Growth Strategy</p>
+                                <p class="topics">• Beginner friendly, 48 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 2nd Box 3 -->
+                        <div class="courses third mx-auto mb-4 ms-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">Facebook Adverting Success</h5>
+                                <p class="mb-3">Long Term Growth Strategy</p>
+                                <p class="topics">• Beginner friendly, 48 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 2nd Box 4 -->
+                        <div class="courses fourth mx-auto mb-4 ms-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="free">FREE</span></p>
+                                <h5 class="mb-1 lh-1">Entrepreneurs Handbook Part 5:</h5>
+                                <p class="mb-3">Maximise Your Business Growth</p>
+                                <p class="topics">• Beginner friendly, 11 topics</p>
+                            </div>
+                            <div class="bot-free"></div>
+                        </div>
+                        <!-- 2nd Box 5 -->
+                        <div class="courses fifth mx-auto mb-4 ms-lg-1 p-4"
+                            style="display: none; background-color: #124c9b;">
+                            <h4 class="mb-3 text-white">Leadership & Management</h4>
+                            <p class="text-white">• 25 courses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4 mb-md-0">
+                    <!-- Courses 3rd Box -->
+                    <div class="col-12 col-md-6">
+                        <!-- 3rd Box 1 -->
+                        <div class="courses first mx-auto mb-4 me-lg-1">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">Masterclass: Accounting & Finance</h5>
+                                <p class="mb-3">For Small Business Success</p>
+                                <p class="topics">• Beginner friendly, 25 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 3rd Box 2 -->
+                        <div class="courses second mx-auto mb-4 me-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">Organic Social Media Strategy:</h5>
+                                <p class="mb-3">Grow Your Audience, Fast!</p>
+                                <p class="topics">• Beginner friendly, 25 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 3rd Box 3 -->
+                        <div class="courses third mx-auto mb-4 me-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">Customer Lifetime Value:</h5>
+                                <p class="mb-3">Explained!</p>
+                                <p class="topics">• Beginner friendly, 25 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 3rd Box 4 -->
+                        <div class="courses fourth mx-auto mb-4 me-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">Incentivising Customer Retention:</h5>
+                                <p class="mb-3">Keep em' coming back for more!</p>
+                                <p class="topics">• Beginner friendly, 25 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 3rd Box 5 -->
+                        <div class="courses fifth mx-auto mb-4 me-lg-1 p-4"
+                            style="display: none; background-color: #124c9b;">
+                            <h4 class="mb-3 text-white">Website Development</h4>
+                            <p class="text-white">• 25 courses</p>
+                        </div>
+                    </div>
+                    <!-- Courses 4th Box -->
+                    <div class="col-12 col-md-6">
+                        <!-- 4th Box 1 -->
+                        <div class="courses first mx-auto ms-lg-1">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">$5,000,000 E-commerce Strategy</h5>
+                                <p class="mb-3">For entrepreneurs on a tight budget</p>
+                                <p class="topics">• Beginner friendly, 28 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 4th Box 2 -->
+                        <div class="courses second mx-auto ms-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">$5,000,000 E-commerce Strategy</h5>
+                                <p class="mb-3">For entrepreneurs on a tight budget</p>
+                                <p class="topics">• Beginner friendly, 28 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 4th Box 3 -->
+                        <div class="courses third mx-auto ms-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">The Art of Brand Storytelling:</h5>
+                                <p class="mb-3">Make customers NEED your product</p>
+                                <p class="topics">• Beginner friendly, 28 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 4th Box 4 -->
+                        <div class="courses fourth mx-auto ms-lg-1" style="display: none;">
+                            <div class="cBox p-3">
+                                <p class="mb-3 mb-md-2"><span class="pro">PRO</span></p>
+                                <h5 class="mb-1 lh-1">Conversion Optimisation 101:</h5>
+                                <p class="mb-3">Get the most out of your website.</p>
+                                <p class="topics">• Beginner friendly, 28 topics</p>
+                            </div>
+                            <div class="bot-pro"></div>
+                        </div>
+                        <!-- 4th Box 5 -->
+                        <div class="courses fifth mx-auto ms-lg-1 p-4"
+                            style="display: none; background-color: #124c9b;">
+                            <h4 class="mb-3 text-white">Browse All Categories</h4>
+                            <p class="text-white">• 25 courses</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="py-3 d-block d-sm-none afterx grid">
+        <!-- 1st Goal Carousel -->
+        <div class="swiper mySwiper first">
+            <div class="swiper-wrapper">
+                <!-- 1st Goal Carousel Box 1 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="free">FREE</span></p>
+                        <h5 class="mb-2">Entrepreneurs Handbook Part 1:</h5>
+                        <p class="mb-3">Before You Start Your Business</p>
+                        <p class="topics">• Beginner friendly, 17 topics</p>
+                    </div>
+                    <div class="bot-free"></div>
+                </div>
+                <!-- 1st Goal Carousel Box 2 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-2">Facebook Advertising Bootcamp</h5>
+                        <p class="mb-3">From Beginner To Expert</p>
+                        <p class="topics">• Beginner friendly, 48 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+                <!-- 1st Goal Carousel Box 3 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">Masterclass: Accounting & Finance</h5>
+                        <p class="mb-3">For Small Business Success</p>
+                        <p class="topics">• Beginner friendly, 25 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+                <!-- 1st Goal Carousel Box 4 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">$5,000,000 E-commerce Strategy</h5>
+                        <p class="mb-3">For entrepreneurs on a tight budget</p>
+                        <p class="topics">• Beginner friendly, 28 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd Goal Carousel -->
+        <div class="swiper mySwiper second" style="display: none;">
+            <div class="swiper-wrapper">
+                <!-- 2nd Goal Carousel Box 1 -->
+                <div class="coursesx second swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="free">FREE</span></p>
+                        <h5 class="mb-1">Entrepreneur Handbook Part 2:</h5>
+                        <p class="mb-3">Let’s Build Your Business</p>
+                        <p class="topics">• Beginner friendly, 26 topics</p>
+                    </div>
+                    <div class="bot-free"></div>
+                </div>
+                <!-- 2nd Goal Carousel Box 2 -->
+                <div class="coursesx second swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">Facebook Adverting Success</h5>
+                        <p class="mb-3">Long Term Growth Strategy</p>
+                        <p class="topics">• Beginner friendly, 48 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+                <!-- 2nd Goal Carousel Box 3 -->
+                <div class="coursesx second swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">Organic Social Media Strategy:</h5>
+                        <p class="mb-3">Grow Your Audience, Fast!</p>
+                        <p class="topics">• Beginner friendly, 25 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+                <!-- 2nd Goal Carousel Box 4 -->
+                <div class="coursesx second swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">$5,000,000 E-commerce Strategy</h5>
+                        <p class="mb-3">For entrepreneurs on a tight budget</p>
+                        <p class="topics">• Beginner friendly, 28 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd Goal Carousel -->
+        <div class="swiper mySwiper third" style="display: none;">
+            <div class="swiper-wrapper">
+                <!-- 3rd Goal Carousel Box 1 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="free">FREE</span></p>
+                        <h5 class="mb-1">Entrepreneurs Handbook Part 3:</h5>
+                        <p class="mb-3">Let’s Grow Your Business</p>
+                        <p class="topics">• Beginner friendly, 15 topics</p>
+                    </div>
+                    <div class="bot-free"></div>
+                </div>
+                <!-- 3rd Goal Carousel Box 2 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">Facebook Adverting Success</h5>
+                        <p class="mb-3">Long Term Growth Strategy</p>
+                        <p class="topics">• Beginner friendly, 48 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+                <!-- 3rd Goal Carousel Box 3 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">Customer Lifetime Value:</h5>
+                        <p class="mb-3">Explained!</p>
+                        <p class="topics">• Beginner friendly, 25 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+                <!-- 3rd Goal Carousel Box 4 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">The Art of Brand Storytelling:</h5>
+                        <p class="mb-3">Make customers NEED your product</p>
+                        <p class="topics">• Beginner friendly, 28 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 4th Goal Carousel -->
+        <div class="swiper mySwiper fourth" style="display: none;">
+            <div class="swiper-wrapper">
+                <!-- 4th Goal Carousel Box 1 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="free">FREE</span></p>
+                        <h5 class="mb-1">Entrepreneurs Handbook Part 4:</h5>
+                        <p class="mb-3">Managing Your Business Growth</p>
+                        <p class="topics">• Beginner friendly, 21 topics</p>
+                    </div>
+                    <div class="bot-free"></div>
+                </div>
+                <!-- 4th Goal Carousel Box 2 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="free">FREE</span></p>
+                        <h5 class="mb-1">Entrepreneurs Handbook Part 5:</h5>
+                        <p class="mb-3">Maximise Your Business Growth</p>
+                        <p class="topics">• Beginner friendly, 11 topics</p>
+                    </div>
+                    <div class="bot-free"></div>
+                </div>
+                <!-- 4th Goal Carousel Box 3 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">Incentivising Customer Retention:</h5>
+                        <p class="mb-3">Keep em' coming back for more!</p>
+                        <p class="topics">• Beginner friendly, 25 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+                <!-- 4th Goal Carousel Box 4 -->
+                <div class="coursesx swiper-slide">
+                    <div class="cBox p-3">
+                        <p class="mb-2"><span class="pro">PRO</span></p>
+                        <h5 class="mb-1">Conversion Optimisation 101:</h5>
+                        <p class="mb-3">Get the most out of your website.</p>
+                        <p class="topics">• Beginner friendly, 28 topics</p>
+                    </div>
+                    <div class="bot-pro"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 5th Goal Carousel -->
+        <div class="swiper mySwiper fifth" style="display: none;">
+            <div class="swiper-wrapper">
+                <!-- 5th Goal Carousel Box 1 -->
+                <div class="coursesx swiper-slide p-4" style="background-color: #124c9b;">
+                    <h4 class="mb-3 text-white">Digital Marketing</h4>
+                    <p class="text-white">• 25 courses</p>
+                </div>
+                <!-- 5th Goal Carousel Box 2 -->
+                <div class="coursesx swiper-slide p-4" style="background-color: #124c9b;">
+                    <h4 class="mb-3 text-white">Leadership & Management</h4>
+                    <p class="text-white">• 25 courses</p>
+                </div>
+                <!-- 5th Goal Carousel Box 3 -->
+                <div class="coursesx swiper-slide p-4" style="background-color: #124c9b;">
+                    <h4 class="mb-3 text-white">Website Development</h4>
+                    <p class="text-white">• 25 courses</p>
+                </div>
+                <!-- 5th Goal Carousel Box 4 -->
+                <div class="coursesx swiper-slide p-4" style="background-color: #124c9b;">
+                    <h4 class="mb-3 text-white">Browse All Categories</h4>
+                    <p class="text-white">• 25 courses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

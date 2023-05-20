@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f5f6ff;
+}
+
+/* Goals */
+
+.goal {
+    font-weight: 700;
+}
+
+.goals {
+    position: relative;
+    height: 68px;
+    transition: 0.3s ease;
+}
+
+.goals:hover {
+    cursor: pointer;
+}
+
+.goalsx {
+    position: relative;
+    height: 118px;
+    transition: 0.3s ease;
+
+}
+
+.goalsx:hover {
+    cursor: pointer;
+}
+
+.goals-text {
+    position: relative;
+    right: 0%;
+    transition: right ease 0.3s;
+}
+
+.goals-text h4 {
+    color: #114c9b;
+    font-weight: 600;
+}
+
+.title1,
+.title2,
+.title3,
+.title4,
+.title5 {
+    position: relative;
+    right: 0%;
+    transition: right ease 0.3s;
+}
+
+.title1 h4,
+.title2 h4,
+.title3 h4,
+.title4 h4,
+.title5 h4 {
+    color: #114c9b;
+    font-weight: 600;
+}
+
+#goal1 {
+    border-bottom: 1px solid black;
+}
+
+#goal2,
+#goal3,
+#goal4 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#goal5 {
+    border-top: 1px solid black;
+}
+
+
+/* Courses */
+
+.courses {
+    position: relative;
+    height: 180px;
+    border: 1px solid black;
+    transition: 0.25s ease;
+    background-color: white;
+
+}
+
+.courses h4 {
+	font-size: 1.4rem;
+}
+
+.coursesx {
+    height: 180px;
+    width: 240px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    border: 1px solid black;
+    background-color: white;
+
+}
+
+.coursesx h4 {
+	font-size: 1.4rem;
+}
+
+.courses:hover {
+    cursor: pointer;
+    box-shadow: -10px 10px black;
+    transform: translate(10px, -10px);
+}
+
+.topics {
+    color: #114c9b;
+}
+
+
+.grid {
+    background: radial-gradient(#114c9b 2px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.iBox {
+    height: 100px;
+    width: 280px;
+    background: white;
+    margin-top: 40px;
+}
+
+.uBox {
+    background-color: #deccea;
+}
+
+.cBox {
+    height: 155px;
+}
+
+.cBox .pro {
+    background-color: #114c9b;
+    color: white;
+    border-radius: 10px;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    padding-bottom: 0.1em;
+
+}
+
+.cBox .free {
+    background-color: #7ed957;
+    color: white;
+    border-radius: 10px;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    padding-bottom: 0.1em;
+}
+
+.cBox h5 {
+    line-height: 1.2;
+    font-size: 13px;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+
+.cBox p {
+    line-height: 1.2;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.bot-free {
+    height: 35px;
+    width: 100%;
+    background-color: #7ed957;
+    position: absolute;
+    bottom: 0;
+}
+
+.bot-pro {
+    height: 35px;
+    width: 100%;
+    background-color: #114c9b;
+    position: absolute;
+    bottom: 0;
+}
+
+/* .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23eeeeee' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23eeeeee' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+} */
+
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+
+/* body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .swiper {
+  width: 100%;
+  height: 100%;
+} */
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff; */
+
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+} */
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .swiper-slide {
+  width: 60%;
+} */
+
+/* .swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+} */
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .courses {
+        width: 240px;
+    }
+
+    .goals:hover {
+        background-color: white;
+        cursor: pointer;
+        height: 77px !important;
+    }
+
+    .goalsx:hover {
+        background-color: white;
+        cursor: pointer;
+        height: 129px !important;
+    }
+
+    .goals:hover .goals-text {
+        right: -6px;
+    }
+
+    .goals:hover .title1,
+    .goals:hover .title2,
+    .goals:hover .title3,
+    .goals:hover .title4,
+		.goals:hover .title5 {
+        right: -6px;
+    }
+
+    .goalsx:hover .goals-text {
+        right: -6px;
+    }
+
+    .goalsx:hover .title1,
+    .goalsx:hover .title2,
+    .goalsx:hover .title3,
+    .goalsx:hover .title4,
+    .goalsx:hover .title5 {
+        right: -6px;
+    }
+
+    .course-top {
+        margin-top: 20px;
+    }
+
+    .grid {
+        height: 480px;
+    }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .courses {
+        width: 265px;
+    }
+
+    .iBox {
+        width: 220px;
+    }
+
+
+}
